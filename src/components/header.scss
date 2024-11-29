@@ -1,0 +1,217 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 46px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &__logo {
+    padding-right: 20px;
+  }
+
+  &__menu-btn {
+
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.004rem + 0.6vw, 1.625rem);
+    color: var(--white);
+  }
+
+  &__btn {
+    border: 2px solid var(--white);
+    padding: 20px 46px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(1.563rem, 1.457rem + 0.53vw, 2rem);
+    line-height: 150%;
+    color: var(--white);
+  }
+
+  &__menu-bg {
+    background-image: url("../images/header/headerMenu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__portfolio-bg {
+    background-image: url("../images/header/headerPortfolio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__singlePortfolio-bg {
+    background-image: url("../images/header/headerSinglePortfolio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__singlePost-bg {
+    background-image: url("../images/header/headerSinglePost.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__singlePosts-bg {
+    background-image: url("../images/header/headerSinglePosts.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__blog-bg {
+    background-image: url("../images/header/headerBlogs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__about-bg {
+    background-image: url("../images/header/headerAbout.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__contact-bg {
+    background-image: url("../images/header/headerContact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    position: absolute;
+    min-height: 70vh;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__menu-title {
+    display: inline-block;
+    max-width: 779px;
+    width: 100%;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(2.813rem, 1.257rem + 7.78vw, 9.25rem);
+    line-height: 103%;
+    color: var(--ffffff);
+  }
+
+  &__menu-subtitle {
+    display: inline-block;
+    max-width: 779px;
+    width: 100%;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(1.625rem, 1.534rem + 0.45vw, 2rem);
+    line-height: 150%;
+    color: var(--white);
+  }
+
+  .header__menu {
+    position: absolute;
+    top: 0;
+    left: -110%;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgba(35,48,8,.9);
+    z-index: 100;
+    transition: .7s ease;
+  }
+
+  .header__open {
+    left: 0;
+  }
+
+  .header__close {
+    display: flex;
+    justify-content: start;
+    padding: 40px;
+  }
+
+  .header__close-img {
+  }
+
+  .header__list {
+    padding-top: 5%;
+    padding-left: 15%;
+    display: grid;
+    align-items: start;
+    gap: 25px;
+  }
+
+  .header__item {
+  }
+
+  .header__menu-link {
+    position: relative;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(2.375rem, 1.952rem + 2.11vw, 4.125rem);
+    text-transform: uppercase;
+    color: var(--white);
+    transition: .3s ease;
+  }
+
+  .header__menu-link:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 43%;
+    left: -25px;
+    border-radius: 50%;
+    background-color: var(--white);
+  }
+
+  .header__menu-link:hover {
+    color: #9CAA00;
+  }
+
+  @media screen and (max-width: 1110px) {
+    &__none {
+      display: none;
+    }
+
+    &__block {
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      width: 186px;
+    }
+
+  }
+
+  @media screen and (max-width: 769px) {
+    &__logo {
+      width: 150px;
+    }
+
+    &__info {
+      position: absolute;
+      min-height: 70vh;
+      left: 5%;
+    }
+
+    .header__close {
+      padding: 20px;
+    }
+  }
+}
+

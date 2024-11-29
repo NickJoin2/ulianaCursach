@@ -1,0 +1,74 @@
+:root {
+  --font-family: "Lato", sans-serif;
+  --second-family: "Rufina", sans-serif;
+  --third-family: "Inter", sans-serif;
+
+  --black: #000;
+  --dark-gray: #4d4d4d;
+  --dark-green: #233000;
+  --mossy: #5e6600;
+  --green: #9caa00;
+  --light-gray: #ebf0e4;
+  --gray: #b0b0b0;
+  --white: #fff
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1644px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-BoldItalic.ttf") format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Rufina";
+  src: url("../fonts/Rufina-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Rufina";
+  src: url("../fonts/Rufina-Regular.ttf") format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Regular.ttf") format('truetype');
+  font-weight: 400;
+}

@@ -1,0 +1,145 @@
+.footer {
+  background: #233000;
+
+  &__wrapper {
+    padding: 80px 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    padding-top: 30px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 2.077rem + 2.11vw, 4.25rem);
+    color: #fff;
+  }
+
+  &__block {
+    display: grid;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(1.563rem, 1.457rem + 0.53vw, 2rem);
+    line-height: 150%;
+  }
+
+  &__list {
+    display: grid;
+    align-items: start;
+    gap: 28px;
+  }
+
+  &__item {
+    display: grid;
+    align-items: center
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
+    line-height: 139%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    transition: .3s ease;
+  }
+
+  &__link:hover {
+    filter: brightness(0.7);
+  }
+
+  &__form {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__input {
+    width: 523px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.5rem);
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    padding: 30px 20px;
+    border-bottom: 2px solid #fff;
+  }
+
+  &__input::placeholder {
+    color: #fff;
+  }
+
+  &__btn {
+    padding: 20px 45px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(1.125rem, 0.914rem + 1.06vw, 2rem);
+    line-height: 150%;
+    background: #5e6600;
+    transition: .3s ease;
+  }
+
+  &__btn:hover {
+    filter: brightness(0.8);
+  }
+
+  &__form-mark {
+    padding-top: 15px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.72rem + 0.15vw, 0.875rem);
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (max-width: 669px) {
+
+    &__group {
+      gap: 20px;
+    }
+
+    &__input {
+      padding: 17px 38px;
+      width: 140%;
+    }
+
+
+    &__input {
+      width: 330px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__btn {
+      padding: 8px 3px;
+    }
+
+    &__input {
+      width: 100%;
+      padding: 10px 0px;
+    }
+
+    &__wrapper {
+      padding: 30px 0;
+    }
+  }
+
+}
+
+
+
