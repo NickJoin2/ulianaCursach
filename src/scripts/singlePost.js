@@ -1,4 +1,9 @@
-import '../styles/reset.scss'
-import '../styles/root.scss'
-import '../components/header.scss'
-import '../components/footer.scss'
+import '../styles/reset.scss';
+import '../styles/root.scss';
+import '../components/header.scss';
+import '../components/duplicate.scss';
+import '../styles/singlePost/info.scss';
+import '../styles/singlePost/mark.scss';
+import '../styles/singlePost/tags.scss';
+import '../styles/singlePost/blogs.scss'
+import '../components/footer.scss';

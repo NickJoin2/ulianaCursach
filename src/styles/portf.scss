@@ -1,0 +1,121 @@
+.portf {
+  padding: 60px 0;
+
+  &__inner {
+    display: grid;
+    gap: 60px;
+  }
+
+  &__blocks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__block {
+    position: relative;
+  }
+
+
+  &__title {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(2.188rem, 1.991rem + 0.98vw, 3rem);
+    line-height: 133%;
+    color: var(--white);
+  }
+
+  &__info {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.5rem);
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--white);
+  }
+
+  &__block-first {
+    height: 990px;
+    max-width: 1076px;
+    width: 100%;
+    background-image: url("../images/portfolio/1.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__block-second {
+    height: 990px;
+    width: 100%;
+    max-width: 508px;
+    background-image: url("../images/portfolio/2.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__block-three {
+    height: 990px;
+    width: 100%;
+    max-width: 508px;
+    background-image: url("../images/portfolio/3.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__block-four {
+    max-width: 1076px;
+    width: 100%;
+    height: 990px;
+    background-image: url("../images/portfolio/4.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__block-five {
+    height: 990px;
+    width: 100%;
+    max-width: 785px;
+    background-image: url("../images/portfolio/5.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__block-six {
+    height: 990px;
+    width: 100%;
+    max-width: 785px;
+    background-image: url("../images/portfolio/6.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__load {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__loading {
+    padding: 10px 40px;
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.5rem);
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    border: 2px solid var(--black);
+  }
+
+  @media screen and (max-width: 669px) {
+    &__blocks {
+      display: grid;
+    }
+
+    &__inner {
+      gap: 20px;
+    }
+  }
+
+}
+

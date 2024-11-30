@@ -1,0 +1,29 @@
+.mark {
+  min-width: 100vw;
+  height: 534px;
+
+  background-image: url("../../images/singlePost/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(1.938rem, 1.832rem + 0.53vw, 2.375rem);
+    line-height: 140%;
+    text-align: start;
+    color: var(--white);
+  }
+}
+

@@ -1,0 +1,82 @@
+// bread crumbs ---------------------------------------------------------------------------------------------------------
+.bread {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .bread__item {
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.5rem);
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #b0b0b0;
+  }
+
+  &__slash {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.5rem);
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #b0b0b0;
+  }
+
+  &__link-active {
+    color: #4d4d4d;
+  }
+}
+// bread crumbs ---------------------------------------------------------------------------------------------------------
+
+.pagination {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+  }
+
+  &__num {
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.5rem);
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--black);
+    border: 1px solid var(--black);
+  }
+
+  @media screen and (max-width: 669px) {
+    &__list {
+      gap: 10px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__list {
+      gap: 5px;
+    }
+
+    &__num {
+      padding: 5px 10px;
+    }
+  }
+
+}
+

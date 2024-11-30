@@ -1,4 +1,5 @@
 import '../styles/reset.scss'
 import '../styles/root.scss'
 import '../components/header.scss'
+import '../styles/portfolio.scss'
 import '../components/footer.scss'

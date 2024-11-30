@@ -1,4 +1,6 @@
 import '../styles/reset.scss'
 import '../styles/root.scss'
 import '../components/header.scss'
+import '../components/duplicate.scss'
+import '../styles/singlePost/blogs.scss'
 import '../components/footer.scss'
