@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 const devServer = (isDev) => !isDev ? {} : {
     devServer: {
         open: true,
@@ -9,7 +8,6 @@ const devServer = (isDev) => !isDev ? {} : {
         port: 8080,
     }
 };
-
 module.exports = ({develop}) => ({
     mode: develop ? 'development' : 'production',
     entry : {
@@ -35,62 +33,51 @@ module.exports = ({develop}) => ({
             template: './src/html/index.html',
             chunks: ['index']
         }),
-
         new HtmlWebpackPlugin({
             filename: "menu/index.html",
             template: './src/html/menu.html',
             chunks: ['menu']
         }),
-
         new HtmlWebpackPlugin({
             filename: "contact/index.html",
             template: './src/html/contact.html',
             chunks: ['contact']
         }),
-
         new HtmlWebpackPlugin({
             filename: "about/index.html",
             template: './src/html/about.html',
             chunks: ['about']
         }),
-
         new HtmlWebpackPlugin({
             filename: "portfolio/index.html",
             template: './src/html/portfolio.html',
             chunks: ['portfolio']
         }),
-
         new HtmlWebpackPlugin({
             filename: "single-portfolio/index.html",
             template: './src/html/single-portfolio.html',
             chunks: ['singlePortfolio']
         }),
-
         new HtmlWebpackPlugin({
             filename: "blogs/index.html",
             template: './src/html/blogs.html',
             chunks: ['blogs']
         }),
-
         new HtmlWebpackPlugin({
             filename: "blog/index.html",
             template: './src/html/blog.html',
             chunks: ['blog']
         }),
-
         new HtmlWebpackPlugin({
             filename: "single-posts/index.html",
             template: './src/html/single-posts.html',
             chunks: ['singlePosts']
         }),
-
         new HtmlWebpackPlugin({
             filename: "single-post/index.html",
             template: './src/html/single-post.html',
             chunks: ['singlePost']
         }),
-
-
         new MiniCssExtractPlugin({
             filename: '[name]/[name].css',
             chunkFilename: '[id].css',
