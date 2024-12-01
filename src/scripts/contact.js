@@ -1,4 +1,6 @@
 import '../styles/reset.scss'
 import '../styles/root.scss'
 import '../components/header.scss'
+import '../styles/contact.scss'
+import '../styles/callback.scss'
 import '../components/footer.scss'

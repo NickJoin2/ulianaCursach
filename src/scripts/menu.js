@@ -1,4 +1,7 @@
 import '../styles/reset.scss'
 import '../styles/root.scss'
 import '../components/header.scss'
+import '../styles/menu.scss'
+import '../styles/started.scss'
+import '../styles/form.scss'
 import '../components/footer.scss'
